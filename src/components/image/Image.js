@@ -9,7 +9,7 @@ const Image = (props) => {
     );
   });
 
-  return <div>{preparedImages}</div>;
+  return <React.Fragment>{preparedImages}</React.Fragment>;
 };
 
 export default Image;

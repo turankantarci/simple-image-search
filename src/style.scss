@@ -1,11 +1,27 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    padding: 10px;
+body {
+  background-color: #f7f7f7;
+  padding: 10px;
 }
 
-.image-styler img{
-    max-width: 100px;
+.image-styler {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  img {
+    margin-top: 10px;
+    width: 100%;
+    
+    &:last-child{
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: initial;
+    }
+  }
 }
